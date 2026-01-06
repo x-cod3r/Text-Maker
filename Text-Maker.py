@@ -35,7 +35,8 @@ class FileToTextConverter:
             '.css', '.scss', '.sass',     # Stylesheets
             '.json', '.yaml', '.yml',     # Config files
             '.txt', '.md', '.rst',        # Text files
-            '.bat', '.cmd'                # Batch files
+            '.bat', '.cmd',               # Batch files
+            '.inf'
         }
         
         self.selected_files = []
@@ -123,6 +124,7 @@ class FileToTextConverter:
             ("C/C++ files", "*.cpp *.c *.cc *.cxx *.h *.hpp *.hh *.hxx"),
             ("Python files", "*.py *.pyw"),
             ("JavaScript/TypeScript", "*.js *.jsx *.ts *.tsx"),
+            ("INF driver files", "*.inf"),   # ← ADD THIS
             ("All files", "*.*")
         ]
         
